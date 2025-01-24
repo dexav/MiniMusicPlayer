@@ -20,12 +20,19 @@ Ein einfacher, leichtgewichtiger Musik-Player mit grafischer Benutzeroberfläche
 
 ### 1.2 User Stories
 
-| US-№ | Verbindlichkeit | Typ  | Beschreibung                       |
-| ---- | --------------- | ---- | ---------------------------------- |
-| 1    |                 |      | Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️ |
-| ...  |                 |      |                                    |
+| US-№ | Verbindlichkeit | Typ           | Beschreibung                                         |
+| ---- | --------------- | ------------- | --------------------------------------------------- |
+| 1    | Muss            | Funktional    | Als ein Nutzer möchte ich Musikdateien abspielen können, damit ich meine Lieblingssongs hören kann. |
+| 2    | Muss            | Funktional    | Als ein Nutzer möchte ich die Wiedergabe pausieren und fortsetzen können, damit ich die Kontrolle über die Musik habe. |
+| 3    | Muss            | Funktional    | Als ein Nutzer möchte ich die Lautstärke anpassen können, damit ich die Musik leiser oder lauter machen kann. |
+| 4    | Muss            | Funktional    | Als ein Nutzer möchte ich eine Playlist erstellen können, damit ich mehrere Songs hintereinander abspielen kann. |
+| 5    | Muss            | Funktional    | Als ein Nutzer möchte ich Songs aus der Playlist entfernen können, damit ich nur die gewünschten Songs höre. |
+| 6    | Kann            | Funktional    | Als ein Nutzer möchte ich die zufällige Wiedergabe aktivieren können, damit ich Songs in einer zufälligen Reihenfolge hören kann. |
+| 7    | Kann            | Funktional    | Als ein Nutzer möchte ich Songinformationen wie Titel und Dauer sehen können, damit ich weiß, welcher Song gerade gespielt wird. |
+| 8    | Kann            | Qualität      | Als ein Nutzer möchte ich eine einfache und übersichtliche Benutzeroberfläche haben, damit die Bedienung intuitiv ist. |
 
-✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc.), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). Die User Story selber hat folgende Form: *Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️*.
+
+
 
 ### 1.3 Testfälle
 
