@@ -36,12 +36,20 @@ Ein einfacher, leichtgewichtiger Musik-Player mit grafischer Benutzeroberfläche
 
 ### 1.3 Testfälle
 
-| TC-№ | Ausgangslage | Eingabe | Erwartete Ausgabe |
-| ---- | ------------ | ------- | ----------------- |
-| 1.1  |              |         |                   |
-| ...  |              |         |                   |
+| TC-№ | Ausgangslage                                 | Eingabe                                  | Erwartete Ausgabe                                  |
+| ---- | ------------------------------------------- | --------------------------------------- | ------------------------------------------------- |
+| 1.1  | Die App ist gestartet, keine Musik läuft.   | Nutzer wählt eine Musikdatei aus.       | Die ausgewählte Musikdatei wird abgespielt.       |
+| 2.1  | Eine Musikdatei wird abgespielt.            | Nutzer drückt auf "Pause".              | Die Wiedergabe wird pausiert.                     |
+| 2.2  | Die Wiedergabe ist pausiert.                | Nutzer drückt auf "Play".               | Die Wiedergabe wird fortgesetzt.                  |
+| 3.1  | Eine Musikdatei wird abgespielt.            | Nutzer ändert die Lautstärke mit dem Slider. | Die Lautstärke ändert sich entsprechend der Eingabe. |
+| 4.1  | Die Playlist ist leer.                      | Nutzer fügt Songs zur Playlist hinzu.   | Die Songs erscheinen in der Playlist.            |
+| 5.1  | Eine Playlist mit mehreren Songs existiert. | Nutzer entfernt einen Song.             | Der ausgewählte Song wird aus der Playlist entfernt. |
+| 6.1  | Playlist enthält mehrere Songs.             | Nutzer aktiviert die Zufallswiedergabe. | Songs werden in zufälliger Reihenfolge abgespielt. |
+| 7.1  | Ein Song wird abgespielt.                   | -                                       | Songinformationen wie Titel und Dauer werden angezeigt. |
+| 8.1  | Die App ist gestartet.                      | -                                       | Die Benutzeroberfläche ist übersichtlich und bedienbar. |
+| 9.1  | Ein Song mit verfügbarem Text wird abgespielt. | -                                       | Der Songtext wird angezeigt.                       |
+| 10.1 | Ein Song mit Albumcover wird abgespielt.    | -                                       | Das Albumcover wird angezeigt.                     |
 
-✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, die der Testfall abdeckt, und `m` von `1` an nach oben gezählt. Beispiel: Der dritte Testfall, der die zweite User Story abdeckt, hat also die Nummer `2.3`.
 
 ### 1.4 Diagramme
 
