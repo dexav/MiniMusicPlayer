@@ -55,12 +55,23 @@ Ein einfacher, leichtgewichtiger Musik-Player mit grafischer Benutzeroberfläche
 
 ## 2 Planen
 
-| AP-№ | Frist | Zuständig | Beschreibung | geplante Zeit |
-| ---- | ----- | --------- | ------------ | ------------- |
-| 1.A  |       |           |              |               |
-| ...  |       |           |              |               |
+| AP-№ | Frist     | Zuständig | Beschreibung                                          | geplante Zeit |
+| ---- | --------- | --------- | ---------------------------------------------------- | ------------- |
+| 1.A  | Tag 1     | Xavier    | Basis-GUI mit Tkinter erstellen (Fenster, Buttons, Layout) | 45'          |
+| 1.B  | Tag 1     | Filip     | Integration der Pygame-Bibliothek zur Audioverarbeitung | 45'          |
+| 2.A  | Tag 1     | Xavier    | Play-, Pause- und Stop-Funktionen implementieren und testen | 45'          |
+| 2.B  | Tag 1     | Filip     | Erstellung eines Testplans für die Grundfunktionen   | 45'          |
+| 3.A  | Tag 2     | Xavier    | Lautstärkeregler (Slider) in die GUI integrieren     | 45'          |
+| 3.B  | Tag 2     | Filip     | Verbindung des Lautstärkereglers mit der Pygame-Logik | 45'          |
+| 4.A  | Tag 2     | Xavier    | Playlist-Funktionalität (Songs hinzufügen und anzeigen) implementieren | 45' |
+| 4.B  | Tag 2     | Filip     | Funktion zum Entfernen von Songs aus der Playlist erstellen | 45' |
+| 5.A  | Tag 3     | Xavier    | Songinformationen (Titel und Dauer) in der GUI anzeigen | 45'         |
+| 6.A  | Tag 3     | Filip     | Zufallswiedergabe implementieren                     | 45'          |
+| 7.A  | Tag 4     | Xavier    | Benutzertests durchführen und Feedback sammeln       | 45'          |
+| 8.A  | Tag 4     | Filip     | Feinschliff der Benutzeroberfläche und Bugfixes      | 45'          |
+| 8.B  | Tag 5     | Xavier    | Projektdokumentation und Vorbereitung der Präsentation | 45'         |
 
-Total: 
+**Gesamtzeit:** 1125 Minuten
 
 ✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, auf die sich das Arbeitspaket bezieht, und `m` von `A` an nach oben buchstabiert. Beispiel: Das dritte Arbeitspaket, das die zweite User Story betrifft, hat also die Nummer `2.C`.
 
