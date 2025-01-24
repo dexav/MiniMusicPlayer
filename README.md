@@ -47,8 +47,6 @@ Ein einfacher, leichtgewichtiger Musik-Player mit grafischer Benutzeroberfläche
 | 6.1  | Playlist enthält mehrere Songs.             | Nutzer aktiviert die Zufallswiedergabe. | Songs werden in zufälliger Reihenfolge abgespielt. |
 | 7.1  | Ein Song wird abgespielt.                   | -                                       | Songinformationen wie Titel und Dauer werden angezeigt. |
 | 8.1  | Die App ist gestartet.                      | -                                       | Die Benutzeroberfläche ist übersichtlich und bedienbar. |
-| 9.1  | Ein Song mit verfügbarem Text wird abgespielt. | -                                       | Der Songtext wird angezeigt.                       |
-| 10.1 | Ein Song mit Albumcover wird abgespielt.    | -                                       | Das Albumcover wird angezeigt.                     |
 
 
 ### 1.4 Diagramme
