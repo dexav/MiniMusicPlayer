@@ -114,16 +114,29 @@ class MusicPlayer:
         )
         self.remove_btn.pack(side=tk.LEFT, padx=(0, 10))
         
-        # Shuffle button
+        # Shuffle button with icon
         self.shuffle_btn = tk.Button(
             btn_frame,
-            text="Zufällige Wiedergabe",
+            text="🔀 Zufällige Wiedergabe",
             font=("Helvetica", 10),
             bg="#9b59b6",
             fg="white",
-            command=self.toggle_shuffle
+            command=self.toggle_shuffle,
+            padx=10,
+            relief=tk.RAISED
         )
         self.shuffle_btn.pack(side=tk.LEFT)
+        
+        # Shuffle status indicator
+        self.shuffle_status = tk.Label(
+            btn_frame,
+            text="AUS",
+            font=("Helvetica", 8, "bold"),
+            bg="#f5f5f5",
+            fg="#7f8c8d",
+            width=4
+        )
+        self.shuffle_status.pack(side=tk.LEFT, padx=5)
         
     def create_control_frame(self):
         control_frame = tk.Frame(self.root, bg="#ecf0f1", height=100)
@@ -265,27 +278,29 @@ class MusicPlayer:
             pass
     
     def play_song(self):
-        # Stop current song if playing
+    # Stop current song if playing
         pygame.mixer.music.stop()
-        
+        self.progress_bar["value"] = 0  # Reset progress bar
+        self.progress_label.config(text="00:00 / 00:00")  # Reset progress label
+    
         # Get selected song
         if not self.playlist:
             return
-            
+
         self.current_song = self.playlist[self.current_index]
         song_name = os.path.basename(self.current_song)
-        
+
         # Update now playing info
         self.now_playing_var.set(f"Spielt: {song_name}")
-        
+
         # Load and play song
         pygame.mixer.music.load(self.current_song)
         pygame.mixer.music.play()
-        
+
         # Update play button text
         self.play_btn.config(text="⏸")
         self.paused = False
-        
+
         # Get song info
         try:
             audio = MP3(self.current_song)
@@ -294,17 +309,18 @@ class MusicPlayer:
             mins = round(mins)
             secs = round(secs)
             self.duration_var.set(f"Dauer: {mins:02d}:{secs:02d}")
-            
-            # Start progress bar update
-            self.update_progress(song_length)
+
+            # Restart progress bar update
+            self.root.after(500, lambda: self.update_progress(song_length))  
         except:
             self.duration_var.set("Dauer: Unbekannt")
-        
+
         # Highlight current song in playlist
         self.playlist_box.selection_clear(0, tk.END)
         self.playlist_box.selection_set(self.current_index)
         self.playlist_box.activate(self.current_index)
         self.playlist_box.see(self.current_index)
+
     
     def play_pause(self):
         if not self.playlist:
@@ -391,41 +407,57 @@ class MusicPlayer:
     def toggle_shuffle(self):
         # Toggle shuffle mode
         self.shuffle_mode = not self.shuffle_mode
+        
+        # Update button appearance based on shuffle state
         if self.shuffle_mode:
-            self.shuffle_btn.config(bg="#8e44ad")
+            self.shuffle_btn.config(
+                bg="#8e44ad",  # Darker purple
+                relief=tk.SUNKEN,  # Pressed appearance
+                text="🔀 Zufällige Wiedergabe"
+            )
+            self.shuffle_status.config(
+                text="EIN",
+                fg="#27ae60"  # Green color
+            )
+            # Add a visual indicator to the playlist frame
+            self.root.title("Musik-Player (Zufallswiedergabe)")
         else:
-            self.shuffle_btn.config(bg="#9b59b6")
+            self.shuffle_btn.config(
+                bg="#9b59b6",  # Original purple
+                relief=tk.RAISED,  # Normal appearance
+                text="🔀 Zufällige Wiedergabe"
+            )
+            self.shuffle_status.config(
+                text="AUS",
+                fg="#7f8c8d"  # Gray color
+            )
+            self.root.title("Musik-Player")
     
     def update_progress(self, total_length):
-        # Update progress bar
+        # Ensure the song is still playing
+        if not pygame.mixer.music.get_busy() or self.paused:
+            return
+    
         current_time = pygame.mixer.music.get_pos() / 1000
-        
-        # Convert to time format
         mins, secs = divmod(current_time, 60)
         mins = round(mins)
         secs = round(secs)
-        
-        # Format time
-        timeformat = f"{mins:02d}:{secs:02d}"
-        
-        # Get total time
+
         total_mins, total_secs = divmod(total_length, 60)
         total_mins = round(total_mins)
         total_secs = round(total_secs)
-        
-        # Update progress label
-        self.progress_label.config(text=f"{timeformat} / {total_mins:02d}:{total_secs:02d}")
-        
-        # Update progress bar
+
+        self.progress_label.config(text=f"{mins:02d}:{secs:02d} / {total_mins:02d}:{total_secs:02d}")
+    
         if total_length > 0:
             self.progress_bar["value"] = (current_time / total_length) * 100
-        
-        # Check if song has ended
-        if not pygame.mixer.music.get_busy() and not self.paused:
+
+        # If song has ended and is not paused, move to the next song
+        if current_time >= total_length and not self.paused:
             self.play_next()
         else:
-            # Schedule next update
             self.root.after(1000, lambda: self.update_progress(total_length))
+    
     
     def on_closing(self):
         # Stop music and close application
@@ -436,4 +468,3 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = MusicPlayer(root)
     root.mainloop()
-
