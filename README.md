@@ -48,8 +48,8 @@ Ein einfacher, leichtgewichtiger Musik-Player mit grafischer Benutzeroberfläche
 | 4.1  | Die Playlist ist leer.                      | Nutzer fügt Songs zur Playlist hinzu.   | Die Songs erscheinen in der Playlist.            |
 | 5.1  | Eine Playlist mit mehreren Songs existiert. | Nutzer entfernt einen Song.             | Der ausgewählte Song wird aus der Playlist entfernt. |
 | 6.1  | Playlist enthält mehrere Songs.             | Nutzer aktiviert die Zufallswiedergabe. | Songs werden in zufälliger Reihenfolge abgespielt. |
-| 7.1  | Ein Song wird abgespielt.                   | -                                       | Songinformationen wie Titel und Dauer werden angezeigt. |
-| 8.1  | Die App ist gestartet.                      | -                                       | Die Benutzeroberfläche ist übersichtlich und bedienbar. |
+| 7.1  | Ein Song wird abgespielt.                   | Grünen Play Button drücken                                       | Songinformationen wie Titel und Dauer werden angezeigt. |
+| 8.1  | Die App ist gestartet.                      | Programm ausführen in vsc                                      | Die Benutzeroberfläche ist übersichtlich und bedienbar. |
 
 
 ### 1.4 Diagramme
@@ -106,14 +106,29 @@ Wir haben uns entschieden, eine Funktion für die Zufallswiedergabe zu erstellen
 
 ✍️ Tragen Sie jedes Mal, wenn Sie ein Arbeitspaket abschließen, hier ein, wie lang Sie effektiv dafür hatten.
 
-## 5 Kontrollieren
+Hier ist die **Kontrollieren-Phase** im gewünschten Format mit den bestandenen Tests:  
 
-| TC-№ | Datum | Resultat | Tester |
-| ---- | ----- | -------- | ------ |
-| 1.1  |       |          |        |
-| ...  |       |          |        |
+## 5 Kontrollieren  
 
-✍️ Vergessen Sie nicht, ein Fazit hinzuzufügen, welches das Test-Ergebnis einordnet.
+| TC-№ | Datum  | Resultat  | Tester               |
+| ---- | ------ | --------- | -------------------- |
+| 1.1  |  28.02.2025  | Bestanden | Mitrovic + Nursiwat |
+| 1.2  |  28.02.2025  | Bestanden | Mitrovic + Nursiwat |
+| 2.1  |  28.02.2025  | Bestanden | Mitrovic + Nursiwat |
+| 2.2  |  28.02.2025  | Bestanden | Mitrovic + Nursiwat |
+| 3.1  |  28.02.2025  | Bestanden | Mitrovic + Nursiwat |
+| 3.2  |  28.02.2025  | Bestanden | Mitrovic + Nursiwat |
+| 4.1  |  28.02.2025  | Bestanden | Mitrovic + Nursiwat |
+| 4.2  |  28.02.2025  | Bestanden | Mitrovic + Nursiwat |
+| 5.1  |  28.02.2025 | Bestanden | Mitrovic + Nursiwat |
+| 6.1  |  28.02.2025  | Bestanden | Mitrovic + Nursiwat |
+| 7.1  |  28.02.2025  | Bestanden | Mitrovic + Nursiwat |
+| 8.1  |  28.02.2025  | Bestanden | Mitrovic + Nursiwat |
+| 8.2  | 28.02.2025  | Bestanden | Mitrovic + Nursiwat |
+
+
+*Fazit:*
+Alles vom Programm funktioniert einwandfrei und wir sind stolz drauf.
 
 ## 6 Auswerten
 
