@@ -20,7 +20,6 @@ Xavier Nursiwat, Filip Mitrovic
 Ein einfacher, leichtgewichtiger Musik-Player mit grafischer Benutzeroberfläche (GUI), der in Python entwickelt wurde. Der Musik-Player bietet grundlegende Funktionen zur Wiedergabe von Musikdateien und eine intuitive Benutzererfahrung.
 
 
-✍️ Erklären Sie genauer in 50 bis 100 Wörtern, was genau Sie in diesem Projekt erreichen möchten, und was Sie dabei zu lernen hoffen.
 
 ### 1.2 User Stories
 
@@ -49,8 +48,8 @@ Ein einfacher, leichtgewichtiger Musik-Player mit grafischer Benutzeroberfläche
 | 4.1  | Die Playlist ist leer.                      | Nutzer fügt Songs zur Playlist hinzu.   | Die Songs erscheinen in der Playlist.            |
 | 5.1  | Eine Playlist mit mehreren Songs existiert. | Nutzer entfernt einen Song.             | Der ausgewählte Song wird aus der Playlist entfernt. |
 | 6.1  | Playlist enthält mehrere Songs.             | Nutzer aktiviert die Zufallswiedergabe. | Songs werden in zufälliger Reihenfolge abgespielt. |
-| 7.1  | Ein Song wird abgespielt.                   | -                                       | Songinformationen wie Titel und Dauer werden angezeigt. |
-| 8.1  | Die App ist gestartet.                      | -                                       | Die Benutzeroberfläche ist übersichtlich und bedienbar. |
+| 7.1  | Ein Song wird abgespielt.                   | Grünen Play Button drücken                                       | Songinformationen wie Titel und Dauer werden angezeigt. |
+| 8.1  | Die App ist gestartet.                      | Programm ausführen in vsc                                      | Die Benutzeroberfläche ist übersichtlich und bedienbar. |
 
 
 ### 1.4 Diagramme
@@ -73,35 +72,63 @@ Ein einfacher, leichtgewichtiger Musik-Player mit grafischer Benutzeroberfläche
 | 6.A  | Tag 3     | Filip     | Zufallswiedergabe implementieren                     | 45'          |
 | 7.A  | Tag 4     | Xavier    | Benutzertests durchführen und Feedback sammeln       | 45'          |
 | 8.A  | Tag 4     | Filip     | Feinschliff der Benutzeroberfläche und Bugfixes      | 45'          |
-| 8.B  | Tag 5     | Xavier    | Projektdokumentation und Vorbereitung der Präsentation | 45'         |
 
-**Gesamtzeit:** 1125 Minuten
 
-✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, auf die sich das Arbeitspaket bezieht, und `m` von `A` an nach oben buchstabiert. Beispiel: Das dritte Arbeitspaket, das die zweite User Story betrifft, hat also die Nummer `2.C`.
+**Gesamtzeit:** 1080 Minuten
 
-✍️ Ein Arbeitspaket sollte etwa 45' für eine Person in Anspruch nehmen. Die totale Anzahl Arbeitspakete sollte etwa Folgendem entsprechen: `Anzahl R-Sitzungen` ╳ `Anzahl Gruppenmitglieder` ╳ `4`. Wenn Sie also zu dritt an einem Projekt arbeiten, für welches zwei R-Sitzungen geplant sind, sollten Sie auf `2` ╳ `3` ╳`4` = `24` Arbeitspakete kommen. Sollten Sie merken, dass Sie hier nicht genügend Arbeitspakte haben, denken Sie sich weitere "Kann"-User Stories für Kapitel 1.2 aus.
+
 
 ## 3 Entscheiden
 
-✍️ Dokumentieren Sie hier Ihre Entscheidungen und Annahmen, die Sie im Bezug auf Ihre User Stories und die Implementierung getroffen haben.
+Wir haben uns entschieden, eine Funktion für die Zufallswiedergabe zu erstellen, da wir diese auch im privaten Leben häufig nutzen und sie als sehr nützlich empfinden. Sie verhindert, dass Lieder immer in der gleichen Reihenfolge abgespielt werden, und sorgt so für mehr Abwechslung.
 
-## 4 Realisieren
 
-| AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
-| ---- | ----- | --------- | ------------- | ----------------- |
-| 1.A  |       |           |               |                   |
-| ...  |       |           |               |                   |
+
+## 4 Realisieren  
+
+| AP-№ | Datum  | Zuständig | geplante Zeit | tatsächliche Zeit |
+| ---- | ------ | --------- | ------------- | ----------------- |
+| 1.A  | Tag 1  | Xavier    | 45'           | 40'               |
+| 1.B  | Tag 1  | Filip     | 45'           | 45'               |
+| 2.A  | Tag 1  | Xavier    | 45'           | 60'               |
+| 2.B  | Tag 1  | Filip     | 45'           | 40'               |
+| 3.A  | Tag 2  | Xavier    | 45'           | 30'               |
+| 3.B  | Tag 2  | Filip     | 45'           | 45'               |
+| 4.A  | Tag 2  | Xavier    | 45'           | 60'               |
+| 4.B  | Tag 2  | Filip     | 45'           | 40'               |
+| 5.A  | Tag 3  | Xavier    | 45'           | 40'               |
+| 6.A  | Tag 3  | Filip     | 45'           | 50'               |
+| 7.A  | Tag 4  | Xavier    | 45'           | 20'               |
+| 8.A  | Tag 4  | Filip     | 45'           | 20'               |
+
+
+
 
 ✍️ Tragen Sie jedes Mal, wenn Sie ein Arbeitspaket abschließen, hier ein, wie lang Sie effektiv dafür hatten.
 
-## 5 Kontrollieren
+Hier ist die **Kontrollieren-Phase** im gewünschten Format mit den bestandenen Tests:  
 
-| TC-№ | Datum | Resultat | Tester |
-| ---- | ----- | -------- | ------ |
-| 1.1  |       |          |        |
-| ...  |       |          |        |
+## 5 Kontrollieren  
 
-✍️ Vergessen Sie nicht, ein Fazit hinzuzufügen, welches das Test-Ergebnis einordnet.
+| TC-№ | Datum  | Resultat  | Tester               |
+| ---- | ------ | --------- | -------------------- |
+| 1.1  |  28.02.2025  | Bestanden | Mitrovic + Nursiwat |
+| 1.2  |  28.02.2025  | Bestanden | Mitrovic + Nursiwat |
+| 2.1  |  28.02.2025  | Bestanden | Mitrovic + Nursiwat |
+| 2.2  |  28.02.2025  | Bestanden | Mitrovic + Nursiwat |
+| 3.1  |  28.02.2025  | Bestanden | Mitrovic + Nursiwat |
+| 3.2  |  28.02.2025  | Bestanden | Mitrovic + Nursiwat |
+| 4.1  |  28.02.2025  | Bestanden | Mitrovic + Nursiwat |
+| 4.2  |  28.02.2025  | Bestanden | Mitrovic + Nursiwat |
+| 5.1  |  28.02.2025 | Bestanden | Mitrovic + Nursiwat |
+| 6.1  |  28.02.2025  | Bestanden | Mitrovic + Nursiwat |
+| 7.1  |  28.02.2025  | Bestanden | Mitrovic + Nursiwat |
+| 8.1  |  28.02.2025  | Bestanden | Mitrovic + Nursiwat |
+| 8.2  | 28.02.2025  | Bestanden | Mitrovic + Nursiwat |
+
+
+*Fazit:*
+Alles vom Programm funktioniert einwandfrei und wir sind stolz drauf.
 
 ## 6 Auswerten
 
