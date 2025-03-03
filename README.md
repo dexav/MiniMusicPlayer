@@ -5,9 +5,13 @@ Xavier Nursiwat, Filip Mitrovic
 
 | Datum | Version | Zusammenfassung                                              |
 | ----- | ------- | ------------------------------------------------------------ |
-|       | 0.0.1   | ✍️ Jedes Mal, wenn Sie an dem Projekt arbeiten, fügen Sie hier eine neue Zeile ein und beschreiben in *einem* Satz, was Sie erreicht haben. |
-|       | ...     |                                                              |
-|       | 1.0.0   |                                                              |
+|   10.01.2025    |  0.0.1  |       Dokumentation angefangen und Planen des Projektes.                            |
+|    17.01.2025   | 0.0.2   |       Dokumentation erweitert und wieter geplant                                                       |
+|    31.11.2025   | 1.0.0   |       Begonnen mit Implementation,   Integration der Audiofunktion mit einer Bibliothek. Wiedergabe von lokalen Audiodateien.        |
+|    21.02.2025   | 1.0.1   |        Implementierung, Erstellung von Playlisten. Implementierung von Hinzufügen und Löschen von Songs in einer Playlist.                       |
+|    28.02.2025   | 1.0.2   |                                Implementierung von Zufallswiedergabe der Playlists. Programm getestet und Fehler behoben                               |
+|    07.03.2025   | 2.0.0   |                                    Portfolio Erstellen und abgeben                          |
+
 
 ## 1 Informieren
 
