@@ -54,7 +54,8 @@ Ein einfacher, leichtgewichtiger Musik-Player mit grafischer Benutzeroberfläche
 
 ### 1.4 Diagramme
 
-✍️Fügen Sie hier ein Use Case-Diagramm mit mindestens 3 Anwendungsfällen ein; und eine Skizze davon, wie Ihre Netzseite aussehen sollte.
+![MusicPlayerUseCase](https://github.com/user-attachments/assets/3d043724-4e2e-4171-8da6-b07590d28e0f)
+
 
 ## 2 Planen
 
