@@ -105,9 +105,6 @@ Wir haben uns entschieden, eine Funktion für die Zufallswiedergabe zu erstellen
 
 
 
-✍️ Tragen Sie jedes Mal, wenn Sie ein Arbeitspaket abschließen, hier ein, wie lang Sie effektiv dafür hatten.
-
-Hier ist die **Kontrollieren-Phase** im gewünschten Format mit den bestandenen Tests:  
 
 ## 5 Kontrollieren  
 
@@ -133,4 +130,3 @@ Alles vom Programm funktioniert einwandfrei und wir sind stolz drauf.
 
 ## 6 Auswerten
 
-✍️ Fügen Sie hier eine Verknüpfung zu Ihrem Lern-Bericht ein.
